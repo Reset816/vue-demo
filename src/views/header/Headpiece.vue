@@ -3,7 +3,7 @@
     <div class="cont">
       <div class="welcome">欢迎进入短缺药品综合服务平台</div>
       <div class="personal">
-        <img src="../../assets/img/personal-icon.png" alt=""><span>张三</span>
+        <img src="../../assets/img/personal-icon.png" alt="" /><span>张三</span>
       </div>
     </div>
   </div>
@@ -11,8 +11,8 @@
 
 <script>
 export default {
-  name: "Headpiece"
-}
+  name: "Headpiece",
+};
 </script>
 
 <style lang="less" scoped>
@@ -42,6 +42,5 @@ export default {
       margin-right: 10px;
     }
   }
-
 }
 </style>
