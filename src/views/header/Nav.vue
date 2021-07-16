@@ -28,15 +28,21 @@ export default {
         {
           id: "nav1",
           title: "工作动态",
+
         },
         {
           id: "nav2",
           title: "行业报告信息",
-          path: "/frame/report_details",
+          path: "/frame/info",
         },
         {
           id: "nav3",
           title: "药品短缺清单",
+
+
+
+
+
         },
         {
           id: "nav4",
