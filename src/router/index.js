@@ -21,18 +21,19 @@ const routes = [{
         path: "search",
         name: "search",
         component: () => import( /* webpackChunkName: 'main' */ '@/views/main/Search.vue')
-    },{
+    }, {
         path: "search-engine",
         name: "search-engine",
         component: () => import( /* webpackChunkName: 'main' */ '@/views/main/Search-engine.vue')
-    },{
+    }, {
         path: "info",
         name: "info",
         component: () => import( /* webpackChunkName: 'main' */ '@/views/main/Info.vue')
-    },{
+    }, {
         path: "report_details",
         name: "report_details",
-        component: () => import ( /* webpackChunkName: 'main' */ '@/views/main/Details.vue')}]
+        component: () => import( /* webpackChunkName: 'main' */ '@/views/main/Details.vue')
+    }]
 },
 {
     path: "*",

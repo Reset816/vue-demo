@@ -28,7 +28,6 @@ export default {
         {
           id: "nav1",
           title: "工作动态",
-
         },
         {
           id: "nav2",
@@ -38,11 +37,6 @@ export default {
         {
           id: "nav3",
           title: "药品短缺清单",
-
-
-
-
-
         },
         {
           id: "nav4",
