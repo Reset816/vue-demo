@@ -20,6 +20,11 @@ const routes = [{
         path: "search",
         name: "search",
         component: () => import( /* webpackChunkName: 'main' */ '@/views/main/Search.vue')
+    },
+    {
+        path: "search-engine",
+        name: "search-engine",
+        component: () => import( /* webpackChunkName: 'main' */ '@/views/main/Search-engine.vue')
     }]
 },
 {
