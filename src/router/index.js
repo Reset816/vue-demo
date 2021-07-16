@@ -4,23 +4,28 @@ import Router from "vue-router";
 Vue.use(Router);
 
 const routes = [{
-        path: "/",
-        redirect: '/frame'
-    },
-    {
-        path: "/login",
-        name: "login",
-        component: () => import( /* webpackChunkName: 'login' */ '@/views/login')
-    },
-    {
-        path: "/frame",
-        name: "frame",
-        component: () => import( /* webpackChunkName: 'frame' */ '@/views/Frame.vue')
-    },
-    {
-        path: "*",
-        redirect: '/frame'
-    }
+    path: "/",
+    redirect: '/frame'
+},
+{
+    path: "/login",
+    name: "login",
+    component: () => import( /* webpackChunkName: 'login' */ '@/views/login')
+},
+{
+    path: "/frame",
+    name: "frame",
+    component: () => import( /* webpackChunkName: 'frame' */ '@/views/Frame.vue'),
+    children: [{
+        path: "search",
+        name: "search",
+        component: () => import( /* webpackChunkName: 'main' */ '@/views/main/Search.vue')
+    }]
+},
+{
+    path: "*",
+    redirect: '/frame'
+}
 ];
 
 const router = new Router({

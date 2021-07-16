@@ -5,7 +5,7 @@
         <i></i>
       </div>
       <div class="search-box">
-        <i class="search-icon"></i><i class="line"></i><input type="text">
+        <i class="search-icon"></i><i class="line"></i><input type="text" />
       </div>
     </div>
   </div>
@@ -13,8 +13,8 @@
 
 <script>
 export default {
-  name: "Logo-info"
-}
+  name: "Logo-info",
+};
 </script>
 
 <style lang="less" scoped>
@@ -41,8 +41,8 @@ export default {
       float: right;
       width: 268px;
       height: 34px;
-      background: #FFFFFF;
-      border: 1px solid #D3D3D3;
+      background: #ffffff;
+      border: 1px solid #d3d3d3;
       border-radius: 17px;
       margin-top: 43px;
 
@@ -77,9 +77,7 @@ export default {
         font-size: 14px;
         color: #333;
       }
-
     }
-
   }
 }
 </style>

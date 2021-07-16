@@ -1,6 +1,9 @@
 <template>
   <div class="frame">
     <Header></Header>
+    <div class="main">
+      <router-view />
+    </div>
     <Footer></Footer>
   </div>
 </template>
