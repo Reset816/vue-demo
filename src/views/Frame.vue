@@ -1,6 +1,7 @@
 <template>
   <div class="frame">
     <Header></Header>
+    
     <Footer></Footer>
   </div>
 </template>
