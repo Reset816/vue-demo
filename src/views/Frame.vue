@@ -1,13 +1,9 @@
 <template>
   <div class="frame">
     <Header></Header>
-<<<<<<< HEAD
-    
-=======
     <div class="main">
       <router-view />
     </div>
->>>>>>> b1b82fa2159dad12f2352119886e4ee0b7636c6d
     <Footer></Footer>
   </div>
 </template>

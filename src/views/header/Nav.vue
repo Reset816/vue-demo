@@ -32,6 +32,7 @@ export default {
         {
           id: "nav2",
           title: "行业报告信息",
+          path: "/frame/report_details",
         },
         {
           id: "nav3",
