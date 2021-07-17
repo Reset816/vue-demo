@@ -71,49 +71,16 @@
             </ul>
           </div>
         </div>
-        <div class="fn-info">
-          <!-- 进入工作台 -->
-          <div class="enter-piece">
-            <div class="enter-left"><i></i><span>工作台</span></div>
-            <div class="enter-right"><span>进入</span><i></i></div>
-          </div>
-          <!-- 数据展示 -->
-          <div class="data-info">
-            <div class="box clear">
-              <div class="left-txt">
-                <i class="icon1"></i><span>信息审批</span>
-              </div>
-              <div class="right-num"><em>8406</em><span>条</span></div>
-            </div>
-            <div class="box clear">
-              <div class="left-txt">
-                <i class="icon2"></i><span>报告审批</span>
-              </div>
-              <div class="right-num"><em>6</em><span>条</span></div>
-            </div>
-            <div class="box clear">
-              <div class="left-txt">
-                <i class="icon3"></i><span>谏言处置</span>
-              </div>
-              <div class="right-num"><em>6</em><span>条</span></div>
-            </div>
-          </div>
-          <!-- 其他功能入口快 -->
-          <div class="enter-box">
-            <ul>
-              <li class="country"></li>
-              <li class="provincial"></li>
-              <li class="industry"></li>
-            </ul>
-          </div>
-        </div>
+        <Fn-info></Fn-info>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import FnInfo from "@/views/FnInfo.vue";
 export default {
+  components: { FnInfo },
   name: "Search-engine",
   data() {
     return {};
@@ -311,145 +278,6 @@ export default {
             border: 1px solid #cdcdcd;
             border-radius: 2px;
             cursor: pointer;
-          }
-        }
-      }
-
-      .fn-info {
-        width: 244px;
-        float: right;
-        background: #ffffff;
-
-        .enter-piece {
-          width: 100%;
-          height: 37px;
-          background: url(../../assets/img/workbench-bg.png) no-repeat;
-          color: #fff;
-
-          .enter-left {
-            float: left;
-            margin: 7px 0 0 14px;
-            i {
-              display: inline-block;
-              vertical-align: middle;
-              width: 18px;
-              height: 18px;
-              background: url(../../assets/img/workbench-icon.png) no-repeat;
-              /* margin-right: 10px; */
-            }
-
-            span {
-              display: inline-block;
-              font-size: 16px;
-              font-weight: bold;
-              vertical-align: middle;
-              margin-left: 10px;
-            }
-          }
-          .enter-right {
-            float: right;
-            margin: 11px 19px 0 0;
-            span {
-              font-size: 12px;
-              display: inline-block;
-              vertical-align: middle;
-            }
-
-            i {
-              display: inline-block;
-              vertical-align: middle;
-              width: 10px;
-              height: 10px;
-              background: url(../../assets/img/arrow-icon.png);
-              margin-left: 7px;
-            }
-          }
-        }
-
-        .data-info {
-          margin-left: 14px;
-          height: 134px;
-          background: #e9f5ff;
-          border: 1px solid #e1e1e1;
-          border-radius: 6px;
-          margin-top: 14px;
-          padding-top: 6px;
-
-          .box {
-            padding: 0 18px 0 14px;
-            margin: 13px 0;
-
-            .left-txt {
-              float: left;
-
-              i {
-                display: inline-block;
-                width: 22px;
-                height: 22px;
-                vertical-align: middle;
-              }
-
-              .icon1 {
-                background: url(../../assets/img/data-icon1.png);
-              }
-
-              .icon2 {
-                background: url(../../assets/img/data-icon2.png);
-              }
-
-              .icon3 {
-                background: url(../../assets/img/data-icon3.png);
-              }
-
-              span {
-                font-size: 14px;
-                color: #333333;
-                font-weight: bold;
-                display: inline-block;
-                vertical-align: middle;
-                margin-left: 8px;
-              }
-            }
-            .right-num {
-              float: right;
-
-              em {
-                display: inline-block;
-                vertical-align: top;
-                height: 26px;
-                line-height: 26px;
-                font-size: 26px;
-                color: #2b5aaa;
-              }
-
-              span {
-                font-size: 14px;
-                color: #666666;
-                margin-left: 3px;
-                display: inline-block;
-                vertical-align: top;
-              }
-            }
-          }
-        }
-
-        .enter-box {
-          padding-left: 14px;
-          padding-bottom: 14px;
-          margin-top: 14px;
-          li {
-            height: 75px;
-            cursor: pointer;
-          }
-          .country {
-            background: url(../../assets/img/country-list-img.png) no-repeat;
-          }
-          .provincial {
-            margin: 11px 0;
-            background: url(../../assets/img/provincial-list-img.png) no-repeat;
-          }
-          .industry {
-            background: url(../../assets/img/industry-report-img.png) no-repeat;
           }
         }
       }
