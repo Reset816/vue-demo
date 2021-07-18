@@ -19,15 +19,17 @@ export default {
   name: "Nav",
   data() {
     return {
-      activeId: "",
+      activeId: "nav5",
       navList: [
         {
           id: "nav0",
           title: "首页",
+          path: "/frame",
         },
         {
           id: "nav1",
           title: "工作动态",
+          path: "/frame",
         },
         {
           id: "nav2",
@@ -37,15 +39,17 @@ export default {
         {
           id: "nav3",
           title: "药品短缺清单",
+          path: "/frame/search",
         },
         {
           id: "nav4",
           title: "药企停产信息",
+          path: "/frame",
         },
         {
           id: "nav5",
           title: "药品综合查询",
-          path: "/frame/search",
+          path: "/frame/search-engine",
         },
       ],
     };

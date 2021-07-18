@@ -6,12 +6,7 @@ Vue.use(Router);
 const routes = [{
 
     path: "/",
-    redirect: '/frame'
-},
-{
-    path: "/login",
-    name: "login",
-    component: () => import( /* webpackChunkName: 'login' */ '@/views/login')
+    redirect: '/frame/search-engine'
 },
 {
     path: "/frame",
