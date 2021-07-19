@@ -41,7 +41,7 @@ export default {
   }
   .enter-right {
     float: right;
-    margin: 11px 19px 0 0;
+    margin: 8px 19px 0 0;
 
     span {
       font-size: 12px;
